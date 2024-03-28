@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const xlsx=require('xlsx');
-const _PORT= process.env._PORT||3000
+const _PORT= process.env.PORT||3000
 app.use(cors())
 app.get('/', function (req, res) {
   res.send('Hello World')
